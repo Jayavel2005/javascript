@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/javascript/dom_loaded_events/style.css">
-</head>
-<body>
-    
+    <script>
+      // DOM loaded events
+      document.addEventListener("DOMContentLoaded", function () {
+        alert("DOM content loaded");
+        const header = document.getElementById("headerid");
+        header.innerHTML = "Jayavel";
+        console.log(header);
+      });
+    </script>
+    <link rel="stylesheet" href="/javascript/dom_loaded_events/style.css" />
+  </head>
+  <body>
+    <h1 id="headerid">DOM loaded events ⚡</h1>
 
-    <script src="/javascript/dom_loaded_events/main.js"></script>
-</body>
+    <!-- <script src="/javascript/dom_loaded_events/main.js"></script> -->
+  </body>
 </html>
+
+<!-- DOMContentLoaded Event: Once the browser finishes parsing the HTML (even if images and stylesheets are still loading), the DOMContentLoaded event fires. -->
