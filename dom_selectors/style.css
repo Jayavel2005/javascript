@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", system-ui;
+}
+
+/* header */
+header {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #28965a;
+  color: white;
+  font-size: 20px;
+}
+
+html,
+body {
+  background-color: aliceblue;
+}
+
+main {
+  padding: 10px 20px;
+  margin: 10px auto;
+  text-align: center;
+  width: 500px;
+}
+main > div > h1 {
+  font-size: 20px;
+  color: #407899;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-items{
+    background-color: #791E94;
+    margin-top : 10px;
+    list-style-type: none;
+    padding: 10px;
+}
+.food-items .food-item{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+    text-align: start;
+}
+/* /* form */
+.inputFood {
+  padding: 5px 10px ;
+  outline : none;
+  border-radius : 5px;
+  border : 1px solid #000;
+  width: 100%;
+  margin-right: 10px;
+
+}
+.input-btn{
+    padding: 7px 10px;
+    border: none;
+    background-color: #28965a;
+    color: white;
+    cursor: pointer;
+    border-radius : 5px;
+}
