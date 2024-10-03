@@ -132,3 +132,6 @@ class LibraryManagementSystem:
 if __name__ == "__main__":
     system = LibraryManagementSystem()
     system.menu()
+    
+    
+# Succes fully created
