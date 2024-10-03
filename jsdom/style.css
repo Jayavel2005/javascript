@@ -123,8 +123,8 @@ header{
     font-weight: 500;
     font-size: 14px;
     text-align: start;
-    display : none; */
-    opacity: 0;
+    display : none; 
+    opacity :  0;
     transition: opacity 1s ease-in-out;
 }
 
