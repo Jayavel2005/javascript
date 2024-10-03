@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cook App</title>
+    <link rel="stylesheet" href="/javascript/jsdom/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>🍕 Food Cook Planner</h1>
+    </header>
+
+    <main id="main-container" class="main-container">
+
+        <!-- Alert Message for successfully adding food -->
+         <!-- <div class="alert-message">
+            <p>Food is successfully Updated!</p>
+         </div> -->
+
+         <!-- Alert Message for un successfully adding food -->
+          <!-- <div class="error-alert">
+            <div class="error-alert-message">
+                <p>Please Add a food Item 🍕</p>
+            </div>
+            <button  type="button" class="cancel-btn" id="cancelBtn"><i class="fa-solid fa-x"></i></button>
+          </div> -->
+
+        <!-- input field -->
+
+        <div id="input-container" class="input-container">
+            <input type="text" name="" id="inputFood" placeholder="I want to Eat..🍕" value="Biriyani">
+            <button class="saveBtn" id="saveBtn">Save</button>
+        </div>
+
+        <!-- food items list -->
+
+        <div class="food-container">
+            <ul class="food-items" id="food-items">
+                <li class="food-item">Pizza</li>
+                <li class="food-item">Biriyani</li>
+                <li class="food-item">Rasam</li>
+            </ul>
+        </div>
+    </main>
+    
+    <script src="/javascript/jsdom/main.js"></script>
+    <script src="/javascript/jsdom/functionality.js"></script>
+</body>
+</html> 

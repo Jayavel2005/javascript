@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing : border-box;
+    font-family: "Poppins", system-ui;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+
+header{
+    background-color : #0E4749;
+    text-align : center;
+    color : white;
+    font-size : 15px;
+    padding : 10px 0px;
+}
+
+/* Main container */
+.main-container{
+    margin : 20px;
+    padding : 20px;
+    border-radius : 5px;
+    width : 600px;
+    text-align: center;
+    margin : 10px auto;
+
+}
+/* input container */
+
+.input-container{
+    display : flex;
+    justify-content : space-between;
+    background-color : #f2f2f2;
+    padding : 10px;
+    border-radius : 5px;
+    box-shadow : 1px 1px 5px rgba(0,0,0,0.3);
+}
+#inputFood{
+    width : 100%;
+    padding : 10px;
+    border-radius : 5px;
+    border : 1px solid #f2f2f2;
+    margin : auto 5px;
+    outline : none;
+}
+.saveBtn{
+    background-color : #1F7A8C;
+    border : none;
+    border-radius : 5px;
+    color : #fff;
+    padding : 10px 20px;
+    cursor : pointer;
+}
+
+/* Food Container */
+
+.food-container{
+    background-color : #f2f2f2;
+    margin : 25px auto;
+    border-radius : 5px;
+    box-shadow : 1px 2px 5px rgba(0,0,0,0.4);
+    max-height : 450px;
+    overflow : auto;
+    
+}
+::-webkit-scrollbar{
+    display : none;
+}
+.food-container .food-items{
+    list-style-type : none;
+    padding : 10px;
+    margin : 0px;
+}
+.food-container .food-items .food-item{
+    padding : 10px 50px;
+    border : 1px solid #e0e0e0;
+    margin : 5px auto;
+    cursor : pointer;
+    border-radius : 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight : 500;
+}
+
+.food-items .food-item:hover{
+    background-color : #1F7A8C;
+    color : white;
+    font-weight : bold;
+}
+
+
+/* Succesfull Alert Message*/
+
+.alert-message {
+    background-color: #0E4749;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+    display: none;
+    opacity: 0;  /* Start with hidden opacity */
+    transition: opacity 1s ease-in-out;  /* Smooth transition for opacity */
+}
+
+
+/* Un successfull alert message */
+.error-alert{
+    background-color: #D32F2F;
+    display : flex;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+    display : none; */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* error cancel button */
+/* .cancel-btn{
+    padding : 0px 5px;
+    background : none;
+    border : none;
+    cursor : pointer;
+    color : #fff;
+} */
