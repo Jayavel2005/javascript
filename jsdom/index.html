@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Cook App</title>
     <link rel="stylesheet" href="/javascript/jsdom/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <header>
@@ -16,12 +20,12 @@
     <main id="main-container" class="main-container">
 
         <!-- Alert Message for successfully adding food -->
-         <!-- <div class="alert-message">
+        <!-- <div class="alert-message">
             <p>Food is successfully Updated!</p>
          </div> -->
 
-         <!-- Alert Message for un successfully adding food -->
-          <!-- <div class="error-alert">
+        <!-- Alert Message for un successfully adding food -->
+        <!-- <div class="error-alert">
             <div class="error-alert-message">
                 <p>Please Add a food Item 🍕</p>
             </div>
@@ -39,14 +43,17 @@
 
         <div class="food-container">
             <ul class="food-items" id="food-items">
-                <li class="food-item">Pizza</li>
-                <li class="food-item">Biriyani</li>
-                <li class="food-item">Rasam</li>
+                <li class="food-item">
+                    <div>Rasam</div>
+                    <button class="cancel-btn" onclick="deleteFood(event)"><i class="fa-solid fa-trash"></i></button>
+                </li>
             </ul>
         </div>
+
     </main>
-    
-    <script src="/javascript/jsdom/main.js"></script>
-    <script src="/javascript/jsdom/functionality.js"></script>
+
+    <script async src="/javascript/jsdom/main.js"></script>
+    <script defer src="/javascript/jsdom/functionality.js"></script>
 </body>
-</html> 
+
+</html>

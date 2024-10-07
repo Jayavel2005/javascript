@@ -1,7 +1,7 @@
 // import "./functionality";
 const inputFood = document.getElementById("inputFood");
 
-const foodItems = document.getElementById("food-items");
+const foodItemsContainer = document.getElementById("food-items");
 
 const mainContainer = document.getElementById("main-container");
 
@@ -24,17 +24,41 @@ mainContainer.prepend(unsuccessAlert);
 
 const saveBtn = document.getElementById("saveBtn");
 
-const fragment = document.createDocumentFragment();
+
 
 saveBtn.addEventListener("click", () => {
-  const foodItem = inputFood.value;
-  if (foodItem !== "") {
-    const newFood = document.createElement("li");
-    newFood.append(foodItem);
-    newFood.textContent = foodItem;
-    newFood.className = "food-item";
-    fragment.append(newFood);
-    foodItems.appendChild(fragment)
+  const foodItemValue = inputFood.value;
+  if (foodItemValue !== "") {
+
+    // <li class="food-item">
+    // <div>Rasam</div>
+    // <button class="cancel-btn" onclick="deleteFood(event)"><i class="fa-solid fa-trash"></i></button>
+    // </li>
+    const foodList = document.createElement("li");
+    foodList.className = 'food-item';
+    const foodName = document.createElement("div");
+    foodName.textContent = foodItemValue;
+    const foodDeleteBtn = document.createElement("button");
+    foodDeleteBtn.className = 'cancel-btn';
+    foodDeleteBtn.innerHTML =   `<i class="fa-solid fa-trash"></i>`;
+    foodDeleteBtn.setAttribute("onclick","deleteFood(event)");
+    console.log(foodDeleteBtn);
+    foodList.append(foodName, foodDeleteBtn);
+    foodItemsContainer.append(foodList);
+    
+    
+    
+    // console.log(foodName);
+    console.log(foodList);
+    
+    
+    
+    
+
+
+
+
+
     // foodItems.append(newFood);
     inputFood.value = "";
     successAlert.style.display = "block";
@@ -59,3 +83,18 @@ saveBtn.addEventListener("click", () => {
     }, 1500);
   }
 });
+
+
+// item deletion
+
+// <li class="food-item">
+// <div>Rasam</div>
+// <button class="cancel-btn" onclick="deleteFood(event)"><i class="fa-solid fa-trash"></i></button>
+// </li>
+
+
+function deleteFood(event) {
+  let foodItem = event.target.parentElement.parentElement;
+  foodItem.remove()
+
+}
